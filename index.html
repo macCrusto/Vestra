@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
     <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
         <div class="container">
@@ -20,77 +20,68 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="#properties-section">Properties</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#how-it-works">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#calculator-section">Calculator</a></li>
                     <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
                 </ul>
-                <div id="auth-container">
-                    </div>
+                <div id="auth-container"></div>
             </div>
         </div>
     </nav>
 
-    <section class="py-5 mt-5 overflow-hidden">
+    <section class="py-5 mt-5 overflow-hidden position-relative">
         <div class="container py-5">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6 relative z-10">
+                <div class="col-lg-6 relative z-10 animate-on-scroll">
+                    <div class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-3 py-2 rounded-pill mb-4 fw-bold">
+                        <i class="bi bi-stars me-1"></i> #1 Fractional Investment Platform
+                    </div>
                     <h1 class="display-3 fw-bold mb-4 lh-1">
                         Buy, Rent, & Sell <br>
                         <span class="text-primary-custom" id="typing-text">Real Estate</span>
                     </h1>
-                    <p class="lead text-muted mb-5">Invest in fractional shares of premium real estate. Build wealth through diversified property ownership starting from just $100.</p>
+                    <p class="lead text-muted mb-5">Invest in fractional shares of premium real estate based on your spending habits. Build wealth starting from just $100.</p>
                     
-                    <div class="bg-white p-3 rounded-4 shadow-lg border">
-                        <div class="d-flex gap-2 p-1 bg-light rounded-3 mb-3" id="hero-tabs">
-                            <button class="btn btn-primary flex-fill fw-bold shadow-sm" data-tab="Buy">Buy</button>
-                            <button class="btn btn-light text-muted flex-fill fw-bold" data-tab="Rent">Rent</button>
-                            <button class="btn btn-light text-muted flex-fill fw-bold" data-tab="Sell">Sell</button>
-                        </div>
-                        <div class="vstack gap-3">
-                            <div class="input-group">
-                                <span class="input-group-text bg-light border-0"><i class="bi bi-geo-alt"></i></span>
-                                <input type="text" class="form-control bg-light border-0 py-3" placeholder="Location">
-                            </div>
-                            <div class="row g-3">
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <span class="input-group-text bg-light border-0"><i class="bi bi-house"></i></span>
-                                        <input type="text" class="form-control bg-light border-0 py-3" placeholder="Type">
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="input-group">
-                                        <span class="input-group-text bg-light border-0"><i class="bi bi-currency-dollar"></i></span>
-                                        <input type="text" class="form-control bg-light border-0 py-3" placeholder="Price">
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary-custom w-100 py-3 fw-bold text-white d-flex align-items-center justify-center gap-2">
-                                <i class="bi bi-search"></i> Search Properties
-                            </button>
-                        </div>
+                    <div class="bg-white p-2 rounded-pill shadow-lg border d-flex align-items-center p-2" style="max-width: 500px;">
+                        <span class="ps-3 text-muted"><i class="bi bi-geo-alt fs-5"></i></span>
+                        <input type="text" id="search-location" class="form-control border-0 shadow-none form-control-lg bg-transparent" placeholder="Search by city (e.g. Miami)...">
+                        <button id="hero-search-btn" class="btn btn-primary-custom rounded-pill px-4 py-2 fw-bold text-white text-nowrap">
+                            Search
+                        </button>
+                    </div>
+                    
+                    <div class="mt-4 text-muted small">
+                        <i class="bi bi-check-circle-fill text-success me-1"></i> SEC Regulated
+                        <span class="mx-2">•</span>
+                        <i class="bi bi-check-circle-fill text-success me-1"></i> 12.5% Avg Returns
                     </div>
                 </div>
                 
-                <div class="col-lg-6 d-none d-lg-block position-relative">
+                <div class="col-lg-6 d-none d-lg-block position-relative animate-on-scroll">
                     <div class="hero-shape"></div>
-                    <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=1000&q=80" class="img-fluid rounded-5 shadow-lg relative z-10" alt="Villa">
-                    <div class="position-absolute bottom-0 start-0 bg-white p-4 rounded-4 shadow-lg mb-4 ms-n4 border animate-float" style="max-width: 320px; z-index: 20;">
-                        <div class="d-flex justify-content-between align-items-start mb-3">
-                            <div>
-                                <h5 class="fw-bold mb-1">Modern Villa</h5>
-                                <small class="text-muted"><i class="bi bi-geo-alt-fill me-1"></i> Miami Beach, FL</small>
+                    
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=1000&q=80" 
+                             class="img-fluid rounded-5 shadow-lg relative z-10" 
+                             alt="Modern Villa">
+                        
+                        <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-4 shadow-xl mb-4 ms-n4 border animate-float" style="max-width: 280px; z-index: 20;">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=100&q=80" class="rounded-3 object-fit-cover" width="60" height="60">
+                                <div>
+                                    <h6 class="fw-bold mb-0">Miami Villa</h6>
+                                    <small class="text-success fw-bold">Available Now</small>
+                                </div>
                             </div>
-                            <div class="text-end">
-                                <div class="text-primary-custom fw-bold fs-5">$420</div>
-                                <div class="text-muted small">per share</div>
+                            <div class="d-flex justify-content-between align-items-center bg-light rounded-3 p-2">
+                                <div>
+                                    <small class="text-muted d-block" style="font-size: 10px;">Share Price</small>
+                                    <span class="fw-bold">$50.00</span>
+                                </div>
+                                <div class="text-end">
+                                    <small class="text-muted d-block" style="font-size: 10px;">Return</small>
+                                    <span class="text-success fw-bold">9.2%</span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="d-flex align-items-center gap-3 pt-3 border-top small text-muted">
-                            <span><strong>4</strong> Beds</span>
-                            <div class="vr"></div>
-                            <span><strong>3</strong> Baths</span>
-                            <div class="vr"></div>
-                            <span class="text-success bg-success-subtle px-2 py-1 rounded fw-bold">9.5% APY</span>
                         </div>
                     </div>
                 </div>
@@ -98,7 +89,7 @@
         </div>
     </section>
 
-    <section class="py-5 border-top border-bottom">
+    <section class="py-5 border-top border-bottom bg-white animate-on-scroll">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 mb-4 mb-md-0">
@@ -106,20 +97,16 @@
                         <div class="d-flex ms-3">
                             <span class="avatar-stack bg-primary-custom text-white"><i class="bi bi-building"></i></span>
                             <span class="avatar-stack bg-primary-custom text-white ms-n2"><i class="bi bi-building"></i></span>
-                            <span class="avatar-stack bg-primary-custom text-white ms-n2"><i class="bi bi-building"></i></span>
                         </div>
-                        <div>
-                            <div class="fw-bold fs-5">1250+ Companies</div>
-                            <div class="text-muted small">Trust us</div>
-                        </div>
+                        <div class="fw-bold fs-5">1250+ Companies Trust Us</div>
                     </div>
                 </div>
                 <div class="col-md-8">
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-4 gap-md-5 opacity-50 grayscale-wrapper">
-                        <span class="h4 fw-bold text-secondary">Zillow</span>
-                        <span class="h4 fw-bold text-secondary">Redfin</span>
-                        <span class="h4 fw-bold text-secondary">Compass</span>
-                        <span class="h4 fw-bold text-secondary">Century 21</span>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-end gap-5 opacity-50 grayscale-wrapper">
+                        <h4 class="fw-bold text-secondary">Zillow</h4>
+                        <h4 class="fw-bold text-secondary">Redfin</h4>
+                        <h4 class="fw-bold text-secondary">Compass</h4>
+                        <h4 class="fw-bold text-secondary">Century 21</h4>
                     </div>
                 </div>
             </div>
@@ -128,75 +115,101 @@
 
     <section class="py-5">
         <div class="container py-5">
-            <div class="d-flex justify-content-between align-items-end mb-5">
+            <div class="d-flex justify-content-between align-items-end mb-5 animate-on-scroll">
                 <div>
                     <h2 class="fw-bold mb-2">Popular Cities</h2>
                     <p class="text-muted mb-0">Explore investment opportunities in top markets</p>
                 </div>
                 <a href="#" class="text-decoration-none text-muted fw-bold d-none d-md-block">View All <i class="bi bi-arrow-right"></i></a>
             </div>
-            <div class="row g-4" id="city-grid"></div>
+            <div class="row g-4" id="city-grid">
+                </div>
         </div>
     </section>
 
     <section id="properties-section" class="py-5 bg-light">
         <div class="container py-5">
-            <div class="text-center max-w-700 mx-auto mb-5">
+            <div class="text-center max-w-700 mx-auto mb-5 animate-on-scroll">
                 <small class="text-primary-custom fw-bold text-uppercase ls-2">Investment Opportunities</small>
                 <h2 class="fw-bold mt-2">Curated Premium Real Estate</h2>
             </div>
-            <div class="row g-4" id="property-grid"></div>
+            
+            <div class="row g-4" id="property-grid">
+                </div>
+            
             <div class="text-center mt-5">
-                <button class="btn btn-outline-primary-custom fw-bold px-4 py-2 rounded-pill">View All Properties</button>
+                <button class="btn btn-outline-primary-custom fw-bold px-4 py-2 rounded-pill" onclick="window.location.reload()">View All Properties</button>
             </div>
         </div>
     </section>
 
     <section class="py-5 bg-white" id="calculator-section">
         <div class="container py-5">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">Calculate Your Returns</h2>
-                <p class="text-muted">See how your investment can grow over time.</p>
+            <div class="text-center mb-5 animate-on-scroll">
+                <h2 class="fw-bold">Compound Wealth Projector</h2>
+                <p class="text-muted">Calculate the future value of your monthly investments.</p>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center animate-on-scroll">
                 <div class="col-lg-10">
                     <div class="card border-0 shadow-xl rounded-4 overflow-hidden">
                         <div class="card-body p-5">
                             <div class="row g-5">
-                                <div class="col-lg-6">
-                                    <label class="form-label fw-bold text-muted">Investment Amount</label>
-                                    <h2 class="display-4 fw-bold mb-4" id="calc-display">$5,000</h2>
-                                    <input type="range" class="form-range custom-range mb-2" min="100" max="50000" step="100" value="5000" id="investment-slider">
-                                    <div class="d-flex justify-content-between text-muted small mb-4">
-                                        <span>$100</span>
-                                        <span>$50,000</span>
-                                    </div>
-                                    <div class="bg-light p-4 rounded-3">
-                                        <div class="d-flex align-items-center gap-2 text-success fw-bold mb-2">
-                                            <i class="bi bi-graph-up-arrow"></i> Average Annual Return: 8.2%
+                                <div class="col-lg-5">
+                                    <form id="calc-form">
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold text-muted small">Initial Deposit</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text border-0 bg-light fw-bold">$</span>
+                                                <input type="number" id="initial-deposit" class="form-control border-0 bg-light fw-bold p-3" value="5000">
+                                            </div>
                                         </div>
-                                        <small class="text-muted">Based on historical performance.</small>
-                                    </div>
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold text-muted small">Monthly Contribution</label>
+                                            <div class="input-group">
+                                                <span class="input-group-text border-0 bg-light fw-bold">$</span>
+                                                <input type="number" id="monthly-contrib" class="form-control border-0 bg-light fw-bold p-3" value="500">
+                                            </div>
+                                            <input type="range" class="form-range custom-range mt-2" id="monthly-slider" min="0" max="5000" step="50" value="500">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold text-muted small">Time Horizon</label>
+                                            <div class="d-flex align-items-center gap-3">
+                                                <input type="range" class="form-range custom-range" id="years-slider" min="1" max="30" step="1" value="10">
+                                                <span class="fw-bold fs-5 text-primary-custom" id="years-display">10 Yr</span>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <label class="form-label fw-bold text-muted small">Expected APY</label>
+                                            <input type="range" class="form-range custom-range" id="apy-slider" min="1" max="15" step="0.1" value="8.5">
+                                            <div class="text-end fw-bold text-success" id="apy-display">8.5%</div>
+                                        </div>
+                                    </form>
                                 </div>
-                                <div class="col-lg-6 bg-light rounded-4 p-4">
-                                    <small class="text-muted fw-bold text-uppercase">Projected 5-Year Return</small>
-                                    <div class="text-success fw-bold display-5 mb-4" id="result-total">$7,416</div>
-                                    <div class="vstack gap-3 mb-4">
-                                        <div class="d-flex justify-content-between small">
-                                            <span class="text-muted">Initial Investment</span>
-                                            <span class="fw-bold" id="result-initial">$5,000</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between small">
-                                            <span class="text-muted">Total Gain</span>
-                                            <span class="fw-bold text-success" id="result-gain">+$2,416</span>
+                                
+                                <div class="col-lg-7 bg-light rounded-4 p-4 d-flex flex-column">
+                                    <div class="mb-4">
+                                        <small class="text-muted fw-bold text-uppercase">Projected Future Value</small>
+                                        <h2 class="display-4 fw-bold text-success mb-0" id="total-value">$0</h2>
+                                    </div>
+                                    
+                                    <div class="mt-auto position-relative" style="height: 250px;">
+                                        <div id="chart-bars" class="d-flex align-items-end justify-content-between h-100 gap-1">
+                                            </div>
+                                        <div class="d-flex justify-content-between border-top mt-2 pt-2 text-muted small">
+                                            <span>Today</span>
+                                            <span id="chart-end-year">10 Years</span>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-end gap-2" style="height: 100px;">
-                                        <div class="w-20 bg-success opacity-25 rounded-top" style="height: 20%"></div>
-                                        <div class="w-20 bg-success opacity-40 rounded-top" style="height: 40%"></div>
-                                        <div class="w-20 bg-success opacity-60 rounded-top" style="height: 60%"></div>
-                                        <div class="w-20 bg-success opacity-80 rounded-top" style="height: 80%"></div>
-                                        <div class="w-20 bg-success rounded-top" style="height: 100%"></div>
+                                    
+                                    <div class="row mt-4 pt-3 border-top g-3">
+                                        <div class="col-6">
+                                            <small class="text-muted d-block">Total Invested</small>
+                                            <span class="fw-bold fs-5" id="total-invested">$0</span>
+                                        </div>
+                                        <div class="col-6">
+                                            <small class="text-muted d-block">Interest Earned</small>
+                                            <span class="fw-bold fs-5 text-success" id="total-interest">$0</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -207,86 +220,95 @@
         </div>
     </section>
 
-    <section id="resources" class="py-5 bg-light">
+    <section id="resources" class="py-5 bg-white">
         <div class="container py-5 max-w-800">
-            <div class="text-center mb-5">
+            <div class="text-center mb-5 animate-on-scroll">
                 <h2 class="fw-bold">Frequently Asked Questions</h2>
             </div>
-            <div class="accordion accordion-flush" id="faqAccordion"></div>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                </div>
         </div>
     </section>
 
-    <div id="contact-container"></div>
+    <section class="py-5 bg-light pb-5 mb-5 animate-on-scroll">
+        <div class="container max-w-800">
+            <div class="bg-white rounded-4 p-5 text-center shadow-lg border">
+                <div class="d-flex justify-content-center mb-4">
+                     <div class="d-flex ms-3">
+                        <div class="avatar-stack bg-secondary text-white small">JD</div>
+                        <div class="avatar-stack bg-primary text-white small ms-n2">AS</div>
+                        <div class="avatar-stack bg-success text-white small ms-n2">MK</div>
+                    </div>
+                </div>
+                <h3 class="fw-bold mb-2">Still have questions?</h3>
+                <p class="text-muted mb-4">Can't find the answer you're looking for? Our team is here to help.</p>
+                <button class="btn btn-primary-custom text-white fw-bold px-4 py-2 rounded-3">Get in Touch</button>
+            </div>
+        </div>
+    </section>
 
-    <div id="newsletter-container"></div>
+    <section class="position-relative py-5 bg-dark overflow-hidden animate-on-scroll">
+        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25">
+             <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80" class="w-100 h-100 object-fit-cover">
+        </div>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, #212529 0%, rgba(33,37,41,0.95) 40%, rgba(33,37,41,0.7) 100%);"></div>
+        <div class="container position-relative py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h2 class="display-5 fw-bold text-white mb-3">Stay Updated</h2>
+                    <p class="text-white-50 mb-4 lead fs-6">Get exclusive investment opportunities and market insights.</p>
+                    <form class="d-flex flex-column flex-md-row gap-3 mb-3 max-w-600">
+                        <input type="email" class="form-control form-control-lg bg-white bg-opacity-10 border-secondary text-white placeholder-light" placeholder="Enter your email address">
+                        <button type="submit" class="btn btn-primary-custom btn-lg fw-bold px-4 text-nowrap shadow-lg">Subscribe</button>
+                    </form>
+                    <small class="text-white-50 opacity-75">By subscribing, you agree to our Terms and Privacy Policy.</small>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer class="bg-white pt-5 pb-4 border-top">
+    <footer class="bg-white pt-5 pb-4 border-top animate-on-scroll">
         <div class="container">
             <div class="row g-5 mb-5">
                 <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-3 tracking-tight text-dark text-decoration-none" href="#">VESTRA</a>
-                    <p class="text-muted small mt-3 mb-4">
-                        Democratizing real estate investment through fractional ownership. Build wealth, one block at a time.
-                    </p>
+                    <a class="navbar-brand fw-bold fs-3 tracking-tight text-dark" href="#">VESTRA</a>
+                    <p class="text-muted small mt-3 mb-4">Democratizing real estate investment through fractional ownership.</p>
                     <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
-                            <i class="bi bi-twitter-x"></i>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
-                            <i class="bi bi-instagram"></i>
-                        </a>
+                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
-
                 <div class="col-6 col-lg-2 offset-lg-1">
                     <h6 class="fw-bold mb-3">Platform</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
-                        <li><a href="#properties-section" class="text-decoration-none text-reset footer-link">Browse Properties</a></li>
-                        <li><a href="#how-it-works" class="text-decoration-none text-reset footer-link">How it Works</a></li>
+                        <li><a href="#properties-section" class="text-decoration-none text-reset footer-link">Properties</a></li>
                         <li><a href="#calculator-section" class="text-decoration-none text-reset footer-link">Calculator</a></li>
                         <li><a href="#" class="text-decoration-none text-reset footer-link">Success Stories</a></li>
                     </ul>
                 </div>
-
                 <div class="col-6 col-lg-2">
                     <h6 class="fw-bold mb-3">Company</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
                         <li><a href="#" class="text-decoration-none text-reset footer-link">About Us</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Careers</a> <span class="badge bg-success-subtle text-success ms-1" style="font-size: 0.6rem;">Hiring</span></li>
+                        <li><a href="#" class="text-decoration-none text-reset footer-link">Careers</a></li>
                         <li><a href="#" class="text-decoration-none text-reset footer-link">Blog</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Press</a></li>
                     </ul>
                 </div>
-
                 <div class="col-6 col-lg-2">
                     <h6 class="fw-bold mb-3">Legal</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Privacy Policy</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Terms of Service</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Disclosures</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Cookie Settings</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset footer-link">Privacy</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset footer-link">Terms</a></li>
                     </ul>
                 </div>
             </div>
-
-            <div class="border-top pt-4">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <p class="text-muted small mb-0">&copy; 2025 Vestra Inc. All rights reserved.</p>
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <p class="text-muted opacity-50 mb-0" style="font-size: 0.7rem;">
-                            Investment involves risk. Past performance is not indicative of future results.
-                        </p>
-                    </div>
-                </div>
+            <div class="border-top pt-4 text-center text-muted small">
+                &copy; 2025 Vestra Inc. All rights reserved. Investment involves risk.
             </div>
         </div>
     </footer>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="main.js"></script>
 </body>

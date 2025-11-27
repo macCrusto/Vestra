@@ -1,32 +1,18 @@
 :root {
-    --primary-custom: #f79d00; /* Vibrant Orange */
+    --primary-custom: #f79d00;
     --primary-hover: #d98a00;
-    --secondary-custom: #64f38c; /* Electric Green */
+    --secondary-custom: #64f38c;
     --font-sans: 'Inter', sans-serif;
 }
 
-body {
-    font-family: var(--font-sans);
-    color: #1f2937;
-}
+body { font-family: var(--font-sans); color: #1f2937; }
 
-/* --- Typography & Utilities --- */
+/* Colors & Helpers */
 .text-primary-custom { color: var(--primary-custom) !important; }
 .text-success { color: var(--secondary-custom) !important; }
 .bg-success-subtle { background-color: #ecfdf5 !important; }
 
-.rounded-4 { border-radius: 1rem !important; }
-.rounded-5 { border-radius: 1.5rem !important; }
-.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; }
-.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important; }
-.ls-2 { letter-spacing: 0.1em; }
-.max-w-600 { max-width: 600px; }
-.max-w-700 { max-width: 700px; }
-.max-w-800 { max-width: 800px; margin: 0 auto; }
-.cursor-pointer { cursor: pointer; }
-.object-fit-cover { object-fit: cover; }
-
-/* --- Buttons --- */
+/* Buttons */
 .btn-primary-custom {
     background-color: var(--primary-custom);
     border-color: var(--primary-custom);
@@ -44,19 +30,34 @@ body {
     color: white;
 }
 
-/* --- Hero & Animations --- */
+/* Rounded Utilities */
+.rounded-4 { border-radius: 1rem !important; }
+.rounded-5 { border-radius: 1.5rem !important; }
+.shadow-lg { box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important; }
+.shadow-xl { box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important; }
+.ls-2 { letter-spacing: 0.1em; }
+.max-w-600 { max-width: 600px; }
+.max-w-700 { max-width: 700px; }
+.max-w-800 { max-width: 800px; margin: 0 auto; }
+.object-fit-cover { object-fit: cover; }
+
+/* Hero Specifics */
 .hero-shape {
     position: absolute;
     top: 2rem;
     right: 0;
     width: 90%;
     height: 90%;
-    background-color: rgba(247, 157, 0, 0.1); /* Low opacity Orange */
+    background-color: rgba(247, 157, 0, 0.1);
     border-radius: 3rem;
     z-index: 0;
     transform: translate(2rem, 1rem);
 }
 
+.ms-n2 { margin-left: -0.5rem; }
+.ms-n4 { margin-left: -1.5rem; }
+
+/* Avatar Stack */
 .avatar-stack {
     width: 2.5rem;
     height: 2.5rem;
@@ -68,8 +69,8 @@ body {
     position: relative;
     z-index: 1;
 }
-.ms-n2 { margin-left: -0.5rem; }
 
+/* Animations */
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -79,40 +80,17 @@ body {
     animation: float 4s ease-in-out infinite;
 }
 
-/* --- Cards & Interactions --- */
-.hover-shadow:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
-}
+.hover-shadow:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important; }
+.hover-zoom:hover { transform: scale(1.05); }
 .transition { transition: all 0.3s ease; }
+.footer-link { transition: color 0.2s ease; }
+.footer-link:hover { color: var(--primary-custom) !important; }
 
-.hover-zoom:hover {
-    transform: scale(1.05);
-}
-
-/* --- Form Elements --- */
-.custom-range::-webkit-slider-thumb {
-    background: var(--primary-custom);
-}
-
-/* --- Newsletter Specific --- */
-.placeholder-light::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-}
-.bg-white.bg-opacity-10 {
-    color: white !important;
-}
+/* Input Styles */
+.custom-range::-webkit-slider-thumb { background: var(--primary-custom); }
+.placeholder-light::placeholder { color: rgba(255, 255, 255, 0.5); }
 .bg-white.bg-opacity-10:focus {
     background-color: rgba(255, 255, 255, 0.15) !important;
     border-color: var(--primary-custom) !important;
-    box-shadow: 0 0 0 0.25rem rgba(247, 157, 0, 0.25) !important;
     color: white !important;
-}
-
-/* Footer Link Hover Effect */
-.footer-link {
-    transition: color 0.2s ease;
-}
-.footer-link:hover {
-    color: var(--primary-custom) !important;
 }
