@@ -17,7 +17,7 @@ export function initScrollAnimations() {
         // Set initial JS styles to avoid CSS override issues
         el.style.opacity = '0';
         el.style.transform = 'translateY(30px)';
-        el.style.transition = `all 0.8s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.1}s`; // Staggered
+        el.style.transition = `all 0.1s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.1}s`; // Staggered
         
         observer.observe(el);
     });

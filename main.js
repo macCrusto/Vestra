@@ -140,7 +140,10 @@ function initAuth() {
             window.location.reload();
         });
     } else {
-        container.innerHTML = `<button class="btn btn-primary-custom text-white fw-bold px-4 shadow-sm" onclick="loginDemo()">Sign In</button>`;
+        container.innerHTML = `
+            <button class="btn btn-primary-custom text-white fw-bold px-4 shadow-sm" onclick="loginDemo()">Join Waitlist</button>
+            
+        `;
     }
 }
 

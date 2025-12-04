@@ -4,7 +4,7 @@ export const properties = [
         id: '1',
         title: 'Luxury Condo',
         location: 'Miami, FL',
-        image: 'https://picsum.photos/800/600?random=1',
+        image: 'images/1.jpg',
         sharePrice: 250,
         availableShares: 3200,
         totalShares: 10000,
@@ -16,7 +16,7 @@ export const properties = [
         id: '2',
         title: 'Modern Apartment Complex',
         location: 'Austin, TX',
-        image: 'https://picsum.photos/800/600?random=2',
+        image: 'images/2.jpg',
         sharePrice: 180,
         availableShares: 8400,
         totalShares: 15000,
@@ -28,7 +28,7 @@ export const properties = [
         id: '3',
         title: 'Executive Villa',
         location: 'Los Angeles, CA',
-        image: 'https://picsum.photos/800/600?random=3',
+        image: 'images/3.jpg',
         sharePrice: 420,
         availableShares: 1200,
         totalShares: 8000,
@@ -40,7 +40,7 @@ export const properties = [
         id: '4',
         title: 'Downtown Loft',
         location: 'Seattle, WA',
-        image: 'https://picsum.photos/800/600?random=4',
+        image: 'images/4.jpg',
         sharePrice: 195,
         availableShares: 5600,
         totalShares: 12000,
@@ -52,7 +52,7 @@ export const properties = [
         id: '5',
         title: 'Beachfront Property',
         location: 'San Diego, CA',
-        image: 'https://picsum.photos/800/600?random=5',
+        image: 'images/5.jpg',
         sharePrice: 380,
         availableShares: 2800,
         totalShares: 9000,
@@ -64,7 +64,7 @@ export const properties = [
         id: '6',
         title: 'Urban Townhouse',
         location: 'Denver, CO',
-        image: 'https://picsum.photos/800/600?random=6',
+        image: 'images/6.jpg',
         sharePrice: 210,
         availableShares: 6700,
         totalShares: 11000,
@@ -75,10 +75,10 @@ export const properties = [
 ];
 
 export const cities = [
-    { name: 'Miami', count: '145 Properties', img: 'https://images.unsplash.com/photo-1535498730771-e735b998cd64?auto=format&fit=crop&w=600&q=80' },
-    { name: 'Austin', count: '98 Properties', img: 'https://images.unsplash.com/photo-1531218536974-5ea43e8e3424?auto=format&fit=crop&w=600&q=80' },
-    { name: 'Los Angeles', count: '234 Properties', img: 'https://images.unsplash.com/photo-1534190239940-9ba8944ea261?auto=format&fit=crop&w=600&q=80' },
-    { name: 'Seattle', count: '112 Properties', img: 'https://images.unsplash.com/photo-1502175353174-a7a70e73b362?auto=format&fit=crop&w=600&q=80' }
+    { name: 'Miami', count: '145 Properties', img: 'images/miami.jpg' },
+    { name: 'Austin', count: '98 Properties', img: 'images/austin.jpg' },
+    { name: 'Los Angeles', count: '234 Properties', img: 'images/los_angeles.jpg' },
+    { name: 'Seattle', count: '112 Properties', img: 'images/seattle.jpg' }
 ];
 
 export const faqs = [

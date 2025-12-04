@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VESTRA - Fractional Real Estate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
-
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg fixed-top bg-white border-bottom">
         <div class="container">
             <a class="navbar-brand fw-bold fs-3 tracking-tight" href="#">VESTRA</a>
@@ -28,15 +25,17 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="py-5 mt-5 overflow-hidden position-relative">
         <div class="container py-5">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6 relative z-10 animate-on-scroll">
+                <div class="col-lg-7 relative z-10 animate-on-scroll">
                     <div class="badge bg-warning bg-opacity-10 text-warning border border-warning border-opacity-25 px-3 py-2 rounded-pill mb-4 fw-bold">
                         <i class="bi bi-stars me-1"></i> #1 Fractional Investment Platform
                     </div>
                     <h1 class="display-3 fw-bold mb-4 lh-1">
                         Buy, Rent, & Sell <br>
+                        <span class="text-muted">Powered by...</span> <br>
                         <span class="text-primary-custom" id="typing-text">Real Estate</span>
                     </h1>
                     <p class="lead text-muted mb-5">Invest in fractional shares of premium real estate based on your spending habits. Build wealth starting from just $100.</p>
@@ -56,17 +55,17 @@
                     </div>
                 </div>
                 
-                <div class="col-lg-6 d-none d-lg-block position-relative animate-on-scroll">
+                <div class="col-lg-5 d-none d-lg-block position-relative animate-on-scroll">
                     <div class="hero-shape"></div>
                     
                     <div class="position-relative">
-                        <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=1000&q=80" 
+                        <img src="images/527565af71616dfb40d5ec6f00169fea-p_e.webp" 
                              class="img-fluid rounded-5 shadow-lg relative z-10" 
                              alt="Modern Villa">
                         
                         <div class="position-absolute bottom-0 start-0 bg-white p-3 rounded-4 shadow-xl mb-4 ms-n4 border animate-float" style="max-width: 280px; z-index: 20;">
                             <div class="d-flex align-items-center gap-3 mb-2">
-                                <img src="https://images.unsplash.com/photo-1600596542815-e328d4de4bf7?auto=format&fit=crop&w=100&q=80" class="rounded-3 object-fit-cover" width="60" height="60">
+                                <img src="images/_0001_GS1664885-EDIT.jpg" class="rounded-3 object-fit-cover" width="60" height="60">
                                 <div>
                                     <h6 class="fw-bold mb-0">Miami Villa</h6>
                                     <small class="text-success fw-bold">Available Now</small>
@@ -89,6 +88,7 @@
         </div>
     </section>
 
+    <!-- Partnerships Banner -->
     <section class="py-5 border-top border-bottom bg-white animate-on-scroll">
         <div class="container">
             <div class="row align-items-center">
@@ -113,6 +113,7 @@
         </div>
     </section>
 
+    <!-- Popular Cities Section -->
     <section class="py-5">
         <div class="container py-5">
             <div class="d-flex justify-content-between align-items-end mb-5 animate-on-scroll">
@@ -127,6 +128,7 @@
         </div>
     </section>
 
+    <!-- Top Properties Section -->
     <section id="properties-section" class="py-5 bg-light">
         <div class="container py-5">
             <div class="text-center max-w-700 mx-auto mb-5 animate-on-scroll">
@@ -143,6 +145,7 @@
         </div>
     </section>
 
+    <!-- Future Value of Annuity Calculator -->
     <section class="py-5 bg-white" id="calculator-section">
         <div class="container py-5">
             <div class="text-center mb-5 animate-on-scroll">
@@ -220,9 +223,10 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
     <section id="resources" class="py-5 bg-white">
         <div class="container py-5 max-w-800">
-            <div class="text-center mb-5 animate-on-scroll">
+            <div class="text-center mb-5">
                 <h2 class="fw-bold">Frequently Asked Questions</h2>
             </div>
             <div class="accordion accordion-flush" id="faqAccordion">
@@ -230,7 +234,8 @@
         </div>
     </section>
 
-    <section class="py-5 bg-light pb-5 mb-5 animate-on-scroll">
+    <!-- Contact Section -->
+    <section class="py-5 bg-light pb-5 mb-5">
         <div class="container max-w-800">
             <div class="bg-white rounded-4 p-5 text-center shadow-lg border">
                 <div class="d-flex justify-content-center mb-4">
@@ -247,11 +252,12 @@
         </div>
     </section>
 
-    <section class="position-relative py-5 bg-dark overflow-hidden animate-on-scroll">
-        <div class="position-absolute top-0 start-0 w-100 h-100 opacity-25">
-             <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1600&q=80" class="w-100 h-100 object-fit-cover">
+    <!-- Email Newsletter -->
+    <section class="position-relative py-5 bg-dark overflow-hidden">
+        <div class="position-absolute top-0 start-0 w-100 h-100">
+             <img src="images/_0004_BINYAN_TEA2665_EdgeWaterMiami_S290_INT_KITCHEN_R04.jpg" class="w-100 h-100 object-fit-cover">
         </div>
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, #212529 0%, rgba(33,37,41,0.95) 40%, rgba(33,37,41,0.7) 100%);"></div>
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(90deg, #212529 0%, rgba(33,37,41,0.95) 30%, rgba(33,37,41,0.7) 75%, rgba(0,0,0,0.2) 100%);"></div>
         <div class="container position-relative py-5">
             <div class="row align-items-center">
                 <div class="col-lg-7">
@@ -267,39 +273,38 @@
         </div>
     </section>
 
-    <footer class="bg-white pt-5 pb-4 border-top animate-on-scroll">
+    <!-- Footer -->
+    <footer class="bg-white pt-5 pb-3 border-top">
         <div class="container">
-            <div class="row g-5 mb-5">
+            <div class="row g-4 mb-5">
                 <div class="col-lg-4">
-                    <a class="navbar-brand fw-bold fs-3 tracking-tight text-dark" href="#">VESTRA</a>
-                    <p class="text-muted small mt-3 mb-4">Democratizing real estate investment through fractional ownership.</p>
-                    <div class="d-flex gap-2">
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" class="btn btn-sm btn-light border rounded-circle shadow-sm" style="width:36px;height:36px;"><i class="bi bi-instagram"></i></a>
-                    </div>
+                    <a class="fw-bold fs-3 text-reset text-decoration-none tracking-tight" href="#">VESTRA</a>
+                    <p class="text-muted mt-3 small">
+                        The easiest way to invest in fractional real estate. 
+                        Start building your portfolio with as little as $50.
+                    </p>
                 </div>
-                <div class="col-6 col-lg-2 offset-lg-1">
+                <div class="col-6 col-lg-2">
                     <h6 class="fw-bold mb-3">Platform</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
-                        <li><a href="#properties-section" class="text-decoration-none text-reset footer-link">Properties</a></li>
-                        <li><a href="#calculator-section" class="text-decoration-none text-reset footer-link">Calculator</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Success Stories</a></li>
+                        <li><a href="index.html" class="text-decoration-none text-reset">Browse Properties</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">How it Works</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">Pricing</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h6 class="fw-bold mb-3">Company</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">About Us</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Careers</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Blog</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-reset">About Us</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">Blog</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-lg-2">
                     <h6 class="fw-bold mb-3">Legal</h6>
                     <ul class="list-unstyled text-muted small vstack gap-2">
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Privacy</a></li>
-                        <li><a href="#" class="text-decoration-none text-reset footer-link">Terms</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">Privacy</a></li>
+                        <li><a href="#" class="text-decoration-none text-reset">Terms</a></li>
                     </ul>
                 </div>
             </div>
@@ -308,6 +313,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="main.js"></script>
